@@ -16,17 +16,19 @@ export default function SelectService(props) {
           className={styles.serviceSelectionInput} 
           type="radio" 
           id={`service${index + 1}`} 
+          key={`${service} input`}
           name="services" 
           value={service.title} 
           onChange={e => updateFields({ serviceSelected: e.target.value })} 
           checked={service.title === serviceSelected ? 'checked' : false}
           required 
         />
-        <label className={styles.serviceSelectionLabel} htmlFor={`service${index + 1}`}>
+        <label className={styles.serviceSelectionLabel} htmlFor={`service${index + 1}`} key={`${service} label`}>
           <ServiceCard 
             {...services[index]}
             canHover={true}
             isSelected={serviceSelected === `${service.title}` ? true : false}
+            key={`${service} card`}
           />
         </label>
       </div>

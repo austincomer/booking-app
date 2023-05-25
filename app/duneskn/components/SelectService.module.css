@@ -7,18 +7,3 @@
 .serviceSelectionInput {
     display: none;
 }
-
-/* .serviceSelectionLabel {
-    background-color: transparent;
-    border: none;
-    border-radius: 10px;
-    padding: 0;
-} */
-
-@media only screen and (min-width: 570px) {
-
-}
-
-@media only screen and (min-width: 780px) {
-
-}
