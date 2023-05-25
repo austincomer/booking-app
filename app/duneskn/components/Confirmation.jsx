@@ -41,13 +41,13 @@ export default function Confirmation(props) {
                 <div className={styles.contactWrapper}>
                     <h4>CONTACT</h4>
                     <p>Anna Comer</p>
-                    <p>helloduneskn@gmail.com</p>
-                    <p>816-830-8874</p>
+                    <p>hellodune@gmail.com</p>
+                    <p>555-555-5555</p>
                 </div>
             </div>
 
             <div className={styles.confirmationMessageWrapper}>
-                <p>You&apos;re booked! I&apos;ll follow up with you via email or text and let you know all the details. If you have any questions, you can reach out to be at helloduneskn@gmail.com or on Insta @duneskn</p>
+                <p>You&apos;re booked! I&apos;ll follow up with you via email or text and let you know all the details. If you have any questions, you can reach out to be at hellodune@gmail.com or on Insta @duneskn</p>
                 <p>Anna Comer</p>
             </div>
 
