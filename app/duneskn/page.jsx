@@ -11,14 +11,14 @@ export default function Home() {
 
       <div className={styles.content}>
         <header>
-          <h1 className={styles.h1}>Dune - Wilmington Spray Tans & Brows</h1>
+          <h1 className={styles.h1}>Dune Spray Tans & Brows</h1>
         </header>
 
         <AppointmentForm />
 
         <footer>
-          <p className={styles.footerP1}>Powered by</p>
-          <p className={styles.footerP2}>DayMate</p>
+          <p className={styles.footerP1}>Created by</p>
+          <p className={styles.footerP2}>Austin Comer</p>
         </footer>
       </div>
 
