@@ -35,18 +35,22 @@ export default function AppointmentForm() {
         <SelectService 
             {...data}
             updateFields={updateFields}
+            key='Select Service'
         />, 
         <SelectTime 
             {...data}
             updateFields={updateFields}
+            key='Select Time'
         />, 
         <ConfirmAppointment
             {...data} 
             updateFields={updateFields}
+            key='Confirm Appointment'
         />, 
         <Confirmation 
             {...data}
             updateFields={updateFields}
+            key='Confirmation'
         />
     ])
 
