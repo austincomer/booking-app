@@ -1,0 +1,116 @@
+.container {
+    /* border: 1px solid seagreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container h3 {
+    font-size: 1.25rem;
+}
+
+.appointmentDetailsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    /* border: 1px solid tomato; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.nameFieldsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nameFieldsWrapper .inputFieldWrapper {
+    width: 100%;
+}
+
+.inputFieldWrapper {
+    color: var(--black-50);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    /* border: 1px solid; */
+    color: var(--black-25);
+    padding: 0 5px;
+    margin-left: 12px;
+    font-size: .875rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s;
+}
+
+.input {
+    border: 1px solid var(--black-25);
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid var(--black-100);
+}
+
+/* Label element need to be after input element in order for adjacent sibling combinator to work */
+.input:focus ~ .label {
+    color: var(--black-75);
+    background-color: #fff;
+    font-size: .875rem;
+    position: absolute;
+    top: -9px;
+    transform: none;
+}
+
+.labelActive {
+    position: absolute;
+    color: var(--black-75);
+    background-color: #fff;
+    font-size: .875rem;
+    padding: 0 5px;
+    margin-left: 12px;
+    top: -9px;
+    transform: none;
+}
+
+
+@media only screen and (min-width: 570px) {
+
+    .container {
+        gap: 35px;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .nameFieldsWrapper {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+
+    .container {
+        gap: 35px;
+    }
+
+    .nameFieldsWrapper {
+        gap: 30px;
+    }
+
+}

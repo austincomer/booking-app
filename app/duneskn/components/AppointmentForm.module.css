@@ -1,0 +1,82 @@
+.appointmentForm {
+    width: 100%;
+    background-color: var(--main-bg-color-white);
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px #00000010;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.appointmentForm h2 {
+    font-size: 1.375rem;
+}
+
+.lightenWeight {
+    font-weight: 300;
+}
+
+.formBtnWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nextBtn {
+    background-color: #00000042;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    height: 50px;
+    width: 125px;
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointmentForm:valid .nextBtn {
+    background-color: var(--black-100);
+}
+
+.appointmentForm:valid .nextBtn:hover {
+    cursor: pointer;
+}
+
+.backBtn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: var(--black-25);
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-decoration: underline;
+}
+
+.backBtn:hover {
+    cursor: pointer;
+    color: var(--black-100);
+}
+
+@media only screen and (min-width: 570px) {
+
+    .appointmentForm {
+        border-radius: 20px;
+        padding: 35px 25px;
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+
+    .appointmentForm {
+        border-radius: 35px;
+        padding: 40px 50px;
+    }
+
+}

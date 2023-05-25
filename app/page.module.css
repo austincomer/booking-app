@@ -1,0 +1,25 @@
+.main {
+    /* border: 1px solid seagreen; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.navLink {
+    border-radius: 100px;
+    height: 65px;
+    width: 175px;
+    background-color: var(--black-100);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.navLink:hover {
+    cursor: pointer;
+}

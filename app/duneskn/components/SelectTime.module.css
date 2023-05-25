@@ -1,0 +1,128 @@
+.container {
+    /* display: flex;
+    flex-direction: column;
+    gap: 30px; */
+
+    border: 1px solid var(--black-25);
+    padding: 55px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.availableTimesWrapper {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.availableTimesWrapper h3 {
+    font-size: .875rem;
+}
+
+.timeSlotsWrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.timeSlotInput {
+    display: none;
+}
+
+.timeSlot,
+.timeSlotSelected {
+    color: var(--black-100);
+    font-weight: 400;
+    font-size: .875rem;
+    border: 1px solid var(--black-50);
+    border-radius: 100px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeSlotSelected {
+    background-color: var(--black-100);
+    color: #fff;
+    font-weight: 500; 
+}
+
+.timeSlot:hover {
+    cursor: pointer;
+    background-color: var(--black-100);
+    color: #fff;
+    font-weight: 500; 
+}
+
+
+/* .timeSlot,
+.timeSlotSelected {
+    background-color: #00000000;
+    color: var(--black-100);
+    border: 1px solid var(--black-50);
+    border-radius: 100px;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .875rem;
+} */
+
+/* .timeSlotSelected {
+    cursor: pointer;
+    background-color: var(--black-100);
+    color: #fff;
+    font-weight: 500; 
+} */
+
+/* .timeSlot:hover {
+    cursor: pointer;
+    background-color: var(--black-100);
+    color: #fff;
+    font-weight: 500;
+} */
+
+
+@media only screen and (min-width: 570px) {
+
+    .container {
+        padding: 55px 25px;
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+
+    .container {
+        /* border: 1px solid; */
+        display: grid;
+        grid-template-columns: 1fr repeat(1, 1.5fr);
+        row-gap: 30px;
+        column-gap: 50px;
+        width: 100%;
+    }
+
+    .timeWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 60px;
+    }
+
+    .availableTimesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .availableTimesWrapper h3 {
+        font-size: 1.125rem;
+    }
+
+}

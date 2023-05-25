@@ -1,0 +1,176 @@
+.main {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendarContainer {
+    /* border: 1px solid tomato; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.calendarNav {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--black-50);
+}
+
+.changeMonthsIcon,
+.changeMonthsIconDisabled {
+    background-color: transparent;
+    border: none;
+    color: var(--black-25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.changeMonthsIconDisabled {
+    color: transparent
+}
+
+.changeMonthsIcon:hover {
+    cursor: pointer;
+    color: var(--black-50);
+}
+
+.calendarCurrentDate {
+    color: var(--black-50);
+    font-weight: 300;
+}
+
+
+.calendar {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.calendar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar ul li {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weeks {
+    /* border: 1px solid tomato; */
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--black-75);
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 1fr);
+}
+
+.days {
+    /* border: 1px solid tomato; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 1fr);
+    row-gap: 20px;
+}
+
+.dayOfMonthWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstDaySun {
+    grid-column-start: 1;
+}
+.firstDayMon {
+    grid-column-start: 2;
+}
+.firstDayTue {
+    grid-column-start: 3;
+}
+.firstDayWed {
+    grid-column-start: 4;
+}
+.firstDayThu {
+    grid-column-start: 5;
+}
+.firstDayFri {
+    grid-column-start: 6;
+}
+.firstDaySat {
+    grid-column-start: 7;
+}
+
+.todaySelected,
+.dateSelected,
+.todaysDate,
+.notSameMonth,
+.dayOfMonth {
+    /* position: relative; */
+    background-color: transparent;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.todaySelected {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.todaySelected:hover {
+    cursor: pointer;
+}
+
+.dateSelected {
+    background-color: var(--black-75);
+    color: #fff;
+}
+
+.dateSelected:hover {
+    cursor: pointer;
+}
+
+.todaysDate {
+    color: var(--red)
+}
+
+.todaysDate:hover {
+    cursor: pointer;
+    background-color: #F3F3F1;
+}
+
+.notSameMonth {
+    color: var(--black-25);
+    font-weight: 400;
+}
+
+.dayOfMonth {
+    color: var(--black-50);
+}
+
+.dayOfMonth:hover {
+    cursor: pointer;
+    background-color: #F3F3F1;
+}
+
+/* .dayOfMonthTime {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+

@@ -73,46 +73,39 @@ select {
 
 
 :root {
-  --main-bg-color-light: #ECE7E1;
-  --main-bg-color-dark: #ECE7E1;
-  --text-color-white: #fff;
-  --text-color-black: #1c1c1c;
-  --text-color-lifted-black: #353535;
+  --main-bg-color-white: #ffffff;
+  --main-bg-color-offwhite: #F3F3F1;
+  --black-100: #21272C;
+  --black-75: #323B43;
+  --black-50: #515559;
+  --black-25: #B5BEC6;
+  --red: #D65C5C;
 }
 
 body {
   overflow-x: hidden;
-  background-color: var(--main-bg-color-light);
-  padding: 20px;
+  background-color: var(--main-bg-color-offwhite);
+  padding: 15px;
   display: flex;
 }
 
 h1, 
 h2, 
-h3 {
-  color: var(--text-color-black);
+h3,
+p {
+  color: var(--black-75);
+  font-weight: 600;
+
 }
 
 h1 {
-  font-weight: 900;
   font-size: 64px;
 }
 
 h2 {
-  font-weight: 600;
   font-size: 48px;
 }
 
 h3 {
   font-size: 32px;
-}
-
-p {
-  font-weight: 700;
-  color: var(--text-color-lifted-black)
-}
-
-a {
-  font-weight: 700;
-  color: var(--text-color-lifted-black)
 }

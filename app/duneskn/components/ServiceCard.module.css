@@ -1,0 +1,129 @@
+.cardWrapper {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.card,
+.staticCard {
+    border: 1px solid var(--black-50);
+    border-radius: 10px;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all .15s ease-in;
+}
+
+/* when service is selected */
+.serviceSelected {
+    box-shadow: 3px 4px 0 1px var(--black-75);
+    border: 1px solid var(--black-50);
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 3px 4px 0 1px var(--black-75);
+    border: 1px solid var(--black-50);
+    transform: scale(1.005);
+}
+
+.cardImgWrapper {
+    position: relative;
+    height: 225px; 
+    width: 100%;
+}
+
+.cardImg {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.serviceTitleAndPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceTitle {
+    color: var(--black-100);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.servicePrice {
+    color: var(--black-75);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.serviceDuration {
+    color: var(--black-25);
+    font-size: .75rem;
+    font-weight: 400;
+    text-align: start;
+    width: fit-content;
+}
+
+.serviceDesc {
+    color: var(--black-50);
+    font-size: .875rem;
+    font-weight: 500;
+    text-align: start;
+    width: fit-content;
+}
+
+/* WORK ON FORM PADDING WITH MOBILE */
+
+@media only screen and (min-width: 570px) {
+
+    .card,
+    .staticCard {
+        flex-direction: row;
+    }
+
+    .cardImgWrapper {
+        height: 275px; 
+        min-width: 200px;  
+    }
+
+    .cardContent {
+        max-width: 325px;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    .card,
+    .staticCard {
+        padding: 10px;
+    }
+
+    .cardImgWrapper {
+        height: 165px; 
+        width: 230px;  
+    }
+
+    .cardContent {
+        max-width: none;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .cardContent {
+        margin-right: 50px;
+    }
+
+}
