@@ -19,7 +19,7 @@ export const metadata = {
     siteName: 'Dune Skin | Booking',
     images: [
       {
-        url: 'public/images/dune-2.png',
+        url: '/images/dune-2.png',
         width: 800,
         height: 600,
       }
