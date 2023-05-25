@@ -43,6 +43,7 @@ export default function SelectTime(props) {
           className={styles.timeSlotInput}
           type='radio'
           id={time}
+          key={`${time} input`}
           name='time slots'
           value={time}
           onChange={e => handleSelectedTime(e, time)}
@@ -53,31 +54,12 @@ export default function SelectTime(props) {
           htmlFor={time}
           type='button'
           value={time}
+          key={`${time} label`}
         >
         {time}</label>
       </ div>
     )
   })
-
-  // <>
-  //   <input 
-  //     className={styles.serviceSelectionInput} 
-  //     type="radio" 
-  //     id={`service${index + 1}`} 
-  //     name="services" 
-  //     value={service.title} 
-  //     onChange={e => updateFields({ serviceSelected: e.target.value })} 
-  //     checked={service.title === serviceSelected ? 'checked' : false}
-  //     required 
-  //   />
-  //   <label className={styles.serviceSelectionLabel} htmlFor={`service${index + 1}`} key={index}>
-  //     <ServiceCard 
-  //       {...services[index]}
-  //       canHover={true}
-  //       isSelected={serviceSelected === `${service.title}` ? true : false}
-  //     />
-  //   </label>
-  // </>
   
   return (
     <div className={styles.container}>

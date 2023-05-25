@@ -70,7 +70,6 @@ export default function AppointmentForm() {
                         {currentStepIndex === 3 ? 'Exit' : currentStepIndex === 2 ? 'Book Now' : "Next"}
                     </button>
                 }
-
                 {!isFirstStep && !isLastStep && <button className={styles.backBtn} type='button' onClick={back}>Back</button>}
             </div>
 
