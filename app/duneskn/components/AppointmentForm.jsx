@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './AppointmentForm.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useMultiStepForm } from 'app/hooks/useMultiStepForm.js'
 import SelectService from './SelectService'
@@ -59,6 +59,15 @@ export default function AppointmentForm() {
         next()
     }
 
+    function scrollToTop() {
+        window.scrollTo(0, 0)
+    }
+
+    function handleBack() {
+        back()
+        scrollToTop()
+    }
+
     return (
         <form className={styles.appointmentForm} onSubmit={onSubmit}>
 
@@ -70,11 +79,11 @@ export default function AppointmentForm() {
 
             <div className={styles.formBtnWrapper}> 
                 { currentStepIndex < 3 && 
-                    <button className={styles.nextBtn} type='submit'>
+                    <button className={styles.nextBtn} type='submit' onClick={scrollToTop}>
                         {currentStepIndex === 3 ? 'Exit' : currentStepIndex === 2 ? 'Book Now' : "Next"}
                     </button>
                 }
-                {!isFirstStep && !isLastStep && <button className={styles.backBtn} type='button' onClick={back}>Back</button>}
+                {!isFirstStep && !isLastStep && <button className={styles.backBtn} type='button' onClick={handleBack}>Back</button>}
             </div>
 
         </form>
