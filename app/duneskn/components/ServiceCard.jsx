@@ -18,6 +18,7 @@ export default function ServiceCard(props) {
             fill={true}
             alt={alt}
             sizes='50vw'
+            quality={50}
           />
         </div>
 
